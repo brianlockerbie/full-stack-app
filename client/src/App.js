@@ -5,7 +5,7 @@ import UserSignIn from "./UserSignIn";
 import UserSignUp from "./UserSignUp";
 import Courses from "./Courses";
 import NotFound from "./NotFound";
-import CourseDetails from "./CourseDetails";
+import CourseDetail from "./CourseDetail";
 import Forbidden from "./Forbidden";
 import CreateCourse from "./CreateCourse";
 import UpdateCourse from "./UpdateCourse";
@@ -27,7 +27,7 @@ const App = () => {
             path="/courses/create"
           ></PrivateRoute>
           <Route component={Courses} exact path="/courses"></Route>
-          <Route component={CourseDetails} exact path="/courses/:id"></Route>
+          <Route component={CourseDetail} exact path="/courses/:id"></Route>
           <PrivateRoute
             component={UpdateCourse}
             exact

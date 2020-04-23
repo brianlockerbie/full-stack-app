@@ -9,7 +9,7 @@ import { GlobalStateContext } from "./Context";
 // No need to use useEffect here,
 // Because useEffect will render after the first render
 // pass course details using props from Main.js
-function CourseDetails(props) {
+function CourseDetail(props) {
   const context = useContext(GlobalStateContext);
   const loggedInUser = context.authenticateduser.get;
   const { state = {} } = props.location; // set state to blank if props.location is nulll
@@ -135,4 +135,4 @@ function CourseDetails(props) {
     </>
   );
 }
-export default withRouter(CourseDetails);
+export default withRouter(CourseDetail);
