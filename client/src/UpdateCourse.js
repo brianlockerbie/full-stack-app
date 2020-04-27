@@ -140,7 +140,17 @@ function UpdateCourse(props) {
               </button>
               <button
                 className="button button-secondary"
-                onClick={() => props.history.push("/courses")}
+                //redirect to course details if user clicks on cancel
+                // with state containing the information of the course
+                // to be passed to CourseDetails as props
+                onClick={() =>
+                  props.history.push({
+                    pathname: "/courses/" + course.id,
+                    state: {
+                      course: course,
+                    },
+                  })
+                }
               >
                 Cancel
               </button>

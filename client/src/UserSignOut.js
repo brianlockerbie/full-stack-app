@@ -6,20 +6,8 @@ import { GlobalStateContext } from "./Context";
 
 function UserSignOut(props) {
   const context = useContext(GlobalStateContext);
-  console.log(context);
-
   const SignOut = () => {
-    // clear the user from the global store once they sign out
-    context.authenticateduser.set({
-      email: "",
-      password: "",
-      userId: 0,
-      firstName: "",
-      lastName: "",
-    });
-    // set isAuthenticated to false once they log out
-    context.isAuthenticated.set(false);
-
+    context.signOut();
     props.history.push("/signin");
   };
 

@@ -11,37 +11,16 @@ const UserSignIn = (props) => {
   const [password, setPassword] = useState("");
   const [message, setMesage] = useState("");
 
-  const Authenticate = () => {
-    let base64 = require("base-64");
-    let url = "http://localhost:5000/api/users";
-    let headers = new Headers();
-    headers.append(
-      "Authorization",
-      "Basic " + base64.encode(email + ":" + password)
-    );
-
-    fetch(url, {
-      method: "GET",
-      headers: headers,
-    })
-      .then((response) => response.json())
-      .then((user) => {
-        if (user.id) {
-          // update the user information from the global store once they sign in
-          context.authenticateduser.set({
-            email: email,
-            password: password,
-            userId: user.id,
-            firstName: user.firstName,
-            lastName: user.lastName,
-          });
-          context.isAuthenticated.set(true);
-
-          props.history.push("/courses");
-        } else {
-          setMesage("Email Address or Password is incorrect.");
-        }
-      });
+  // callBack required for API Call,
+  // we don't want to redirect to "/courses", if the api call from the fetch context.signIn
+  // has not been completed yet,
+  // so we have to pass the redirection to /"courses" in a CallBack
+  const callBack = (flag) => {
+    if (!flag) setMesage("Email Address or Password is incorrect.");
+    else props.history.push("/courses");
+  };
+  const Authenticate = (email, password, callBack) => {
+    context.signIn(email, password, callBack);
   };
 
   return (
