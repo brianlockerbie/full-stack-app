@@ -60,7 +60,7 @@ const UserSignIn = (props) => {
                       <button
                         className="button"
                         type="button"
-                        onClick={() => Authenticate()}
+                        onClick={() => Authenticate(email, password, callBack)}
                       >
                         Sign In
                       </button>
