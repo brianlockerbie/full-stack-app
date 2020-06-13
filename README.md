@@ -61,5 +61,3 @@ npm start
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-[![install size](https://packagephobia.now.sh/badge?p=minimist@0.2.1)](https://packagephobia.now.sh/result?p=minimist@0.2.1)
