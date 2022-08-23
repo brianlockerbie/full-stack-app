@@ -3,6 +3,23 @@
 ## Description
 This is a Full stack application empowering users to view a list of courses and the detail for a specific course. Users can sign up to create an account or sign in with an existing account, and create, update, or delete courses.
 
+## Technologies
+* CSS
+* HTML
+* Node.js
+* Sequelize
+* Express
+* React
+* React Context API
+
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshot](#screenshot)
+- [License](#license)
+
 ## Instructions
 
 If you would like to run the project locally clone or download the main branch and follow these instructions.
@@ -62,3 +79,16 @@ npm start
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+
+## Usage
+Live link [here](https://coursefinder111.herokuapp.com)
+
+
+## Screenshots
+<img src="images/note-taker-ss.png">
+<img src="images/note-taker-ss1.png">
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br>
+This project is licensed under the MIT License - see the [license info](https://opensource.org/licenses/MIT) for more details.
