@@ -86,8 +86,8 @@ Live link [here](https://coursefinder111.herokuapp.com)
 
 
 ## Screenshots
-<img src="images/note-taker-ss.png">
-<img src="images/note-taker-ss1.png">
+<img src="">
+<img src="">
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br>
