@@ -1,10 +1,11 @@
-Full-Stack-APP with React and a REST API 🖼️
+<h1 align="center">Full-Stack-APP with React and a REST API</h1>
 
-This is my tenth project for the 🏡 Treehouse Techdegree Full Stack JavaScript.
+## Description
+This is a Full stack application empowering users to view a list of courses and the detail for a specific course. Users can sign up to create an account or sign in with an existing account, and create, update, or delete courses.
 
-## Getting Started
+## Instructions
 
-If you would like to run the project locally clone or download the master branch and follow these instructions.
+If you would like to run the project locally clone or download the main branch and follow these instructions.
 
 ### Node.js
 
