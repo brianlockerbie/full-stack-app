@@ -87,8 +87,8 @@ Live link [here](https://coursefinder111.herokuapp.com)
 
 ## Screenshots
 <img src="images/courses-manager.png">
-<img src="images/courses-manager.png1">
-<img src="images/courses-manager.png2">
+<img src="images/courses-manager1.png">
+<img src="images/courses-manager2.png">
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br>
